@@ -25,7 +25,7 @@ A list of all plans available can be found [here](http://addons.heroku.com/babli
     $ heroku addons:add bablic
     -----> Adding bablic to sharp-mountain-4005... done, v18 (free)
 
- Once Bablic has been added, a `BABLIC_ID` and a 'BABLIC_SNIPPET' setting will be available in the app configuration. The 'BABLIC_SNIPPT' is the client-side code that will be added to your HTML layout files. to integrate your web pages. This can be confirmed using the `heroku config:get` command.
+ Once Bablic has been added, a `BABLIC_ID` and a `BABLIC_SNIPPET` setting will be available in the app configuration. The `BABLIC_SNIPPET` is the client-side code that will be added to your HTML layout files. to integrate your web pages. This can be confirmed using the `heroku config:get` command.
 
     :::term
     $ heroku config:get BABLIC_ID
