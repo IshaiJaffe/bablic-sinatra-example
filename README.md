@@ -36,7 +36,7 @@ After installing Bablic the application should be configured to fully integrate 
 
 ## Using with Rails 3.x
 
-### Feature 1
+### Installation
 
 in your layout.erb file ( or any other html template file you're using )
 
@@ -46,7 +46,7 @@ in your layout.erb file ( or any other html template file you're using )
             <%= ENV('BABLIC_SNIPPET') %>
     .....
  
-### Feature 2
+### Configuration
 
 Exclude specific elements:
 
