@@ -1,1 +1,1 @@
-web: ruby web.rb
+web: bundle exec rackup web.ru -p $PORT
