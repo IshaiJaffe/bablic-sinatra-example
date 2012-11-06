@@ -84,7 +84,7 @@ in your layout.ejs file
     <html>
     ....
         <body>
-            <%= process.env.BABLIC_SNIPPET || '' %>
+            <%- process.env.BABLIC_SNIPPET || '' %>
     ....
 
 
