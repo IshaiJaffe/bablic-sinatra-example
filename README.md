@@ -24,6 +24,19 @@ A list of all plans available can be found [here](http://addons.heroku.com/babli
     :::term
     $ heroku addons:add bablic
     -----> Adding bablic to sharp-mountain-4005... done, v18 (free)
+    -----> Localization is set from "en" to "es"
+
+ You'll notice the message saying you're site localization is set from english to spanish, those are the defaults locale codes.
+ To define your site locale codes on provision:
+
+    $ heroku addons:add bablic --original=<ORIGINAL_LOCALE_CODE> --target=<TARGET_LOCALE_CODES>
+
+ For example:
+
+    $ heroku addons:add bablic --original=fr --target="de,hi"
+    -----> Adding bablic to sharp-mountain-4005... done, v18 (free)
+    -----> Localization is set from "fr" to "de,hi"
+
 
  Once Bablic has been added, a `BABLIC_ID` and a `BABLIC_SNIPPET` setting will be available in the app configuration. The `BABLIC_SNIPPET` is the client-side code that will be added to your HTML layout files. to integrate your web pages. This can be confirmed using the `heroku config:get` command.
 
